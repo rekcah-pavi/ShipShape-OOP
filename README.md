@@ -78,7 +78,7 @@ ShipShape is a maritime maintenance and supply company that provides ship repair
 
 2. **Open in Eclipse:**
    - Open Eclipse IDE.
-   - Go to `File > Import > Existing Projects into Workspace`.
+   - Go to `File > Import > General > Projects from folder or Archive`.
    - Select the cloned repository.
 
 3. **Configure Database Connection:**
