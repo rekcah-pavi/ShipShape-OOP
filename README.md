@@ -5,6 +5,23 @@
 
 ShipShape is a maritime maintenance and supply company that provides ship repair services, sells marine spare parts, and offers ship repainting services. This project automates ShipShape’s manual processes through a Java Swing application.
 
+## Preview
+
+<table>
+  <tr>
+    <td><img src="https://github.com/rekcah-pavi/ShipShape-OOP/blob/main/photos/Screenshot%20from%202024-06-16%2010-41-00.png?raw=true" width="200"/></td>
+    <td><img src="https://github.com/rekcah-pavi/ShipShape-OOP/blob/main/photos/Screenshot%20from%202024-06-16%2010-41-14.png?raw=true" width="200"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/rekcah-pavi/ShipShape-OOP/blob/main/photos/Screenshot%20from%202024-06-16%2010-41-22.png?raw=true" width="200"/></td>
+    <td><img src="https://github.com/rekcah-pavi/ShipShape-OOP/blob/main/photos/Screenshot%20from%202024-06-16%2010-41-30.png?raw=true" width="200"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/rekcah-pavi/ShipShape-OOP/blob/main/photos/Screenshot%20from%202024-06-16%2010-42-17.png?raw=true" width="200"/></td>
+    <td><img src="https://github.com/rekcah-pavi/ShipShape-OOP/blob/main/photos/Screenshot%20from%202024-06-16%2010-42-25.png?raw=true" width="200"/></td>
+  </tr>
+</table>
+
 ## Features
 
 1. **Manage Customer Orders:** Add, update, and remove orders for repairs, repainting, and spare parts.
@@ -88,22 +105,7 @@ ShipShape is a maritime maintenance and supply company that provides ship repair
    - Right-click on the project in Eclipse.
    - Select `Run As > Java Application`.
 
-## Preview
 
-<table>
-  <tr>
-    <td><img src="https://github.com/rekcah-pavi/ShipShape-OOP/blob/main/photos/Screenshot%20from%202024-06-16%2010-41-00.png?raw=true" width="200"/></td>
-    <td><img src="https://github.com/rekcah-pavi/ShipShape-OOP/blob/main/photos/Screenshot%20from%202024-06-16%2010-41-14.png?raw=true" width="200"/></td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/rekcah-pavi/ShipShape-OOP/blob/main/photos/Screenshot%20from%202024-06-16%2010-41-22.png?raw=true" width="200"/></td>
-    <td><img src="https://github.com/rekcah-pavi/ShipShape-OOP/blob/main/photos/Screenshot%20from%202024-06-16%2010-41-30.png?raw=true" width="200"/></td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/rekcah-pavi/ShipShape-OOP/blob/main/photos/Screenshot%20from%202024-06-16%2010-42-17.png?raw=true" width="200"/></td>
-    <td><img src="https://github.com/rekcah-pavi/ShipShape-OOP/blob/main/photos/Screenshot%20from%202024-06-16%2010-42-25.png?raw=true" width="200"/></td>
-  </tr>
-</table>
 
 ## Project Specification
 
