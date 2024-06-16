@@ -7,10 +7,6 @@ ShipShape is a maritime maintenance and supply company that provides ship repair
 
 ## Features
 
-# Project Name
-
-## Features
-
 1. **Manage Customer Orders:** Add, update, and remove orders for repairs, repainting, and spare parts.
    - **SQL Table:** `orders`
    - Columns: `order_id`, `item_id`, `order_status`, `customer_id`
