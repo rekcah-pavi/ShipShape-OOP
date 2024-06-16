@@ -115,4 +115,4 @@ To contribute to this project, please fork the repository, create a new branch, 
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the Eclipse Public License. See the [LICENSE](LICENSE) file for details.
