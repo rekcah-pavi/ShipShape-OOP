@@ -5,6 +5,10 @@
 
 ShipShape is a maritime maintenance and supply company that provides ship repair services, sells marine spare parts, and offers ship repainting services. This project automates ShipShape’s manual processes through a Java Swing application.
 
+## video guide
+[![video guide](https://img.youtube.com/vi/JtXJxwx7CM8/maxresdefault.jpg)](https://youtu.be/JtXJxwx7CM8)
+
+
 ## Preview
 
 <table>
