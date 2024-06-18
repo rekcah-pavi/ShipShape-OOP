@@ -51,7 +51,7 @@ public class Main_view extends JFrame {
                         		            report.append("Total Customers: ").append(totalCustomers).append("\n");
                         		        }
                         		    }
-                        		    
+                                    
                         		    String mostOrderedCitySql = "SELECT city, COUNT(city) AS count FROM customers GROUP BY city ORDER BY count DESC LIMIT 1";
                         		    try (PreparedStatement pstmt = conn.prepareStatement(mostOrderedCitySql);
                         		         ResultSet rs = pstmt.executeQuery()) {
