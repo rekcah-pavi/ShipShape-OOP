@@ -8,10 +8,8 @@ import java.awt.event.ActionEvent;
 import java.sql.*;
 
 public class Employee_view extends JFrame {
-
     private static final long serialVersionUID = 1L;
     private JPanel contentPane;
-
     /**
      * Launch the application.
      */
