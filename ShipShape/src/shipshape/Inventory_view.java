@@ -8,10 +8,8 @@ import java.awt.event.ActionEvent;
 import java.sql.*;
 
 public class Inventory_view extends JFrame {
-
     private static final long serialVersionUID = 1L;
     private JPanel contentPane;
-
     /**
      * Launch the application.
      */
@@ -27,7 +25,6 @@ public class Inventory_view extends JFrame {
             }
         });
     }
-    
     public void createTableIfNotExists() {
         String sql = "CREATE TABLE IF NOT EXISTS inventory (" +
                 "item_id INT PRIMARY KEY, " +
@@ -35,7 +32,6 @@ public class Inventory_view extends JFrame {
                 "quantity INT NOT NULL, " +
                 "SupplierId INT NOT NULL" +
                 ")";
-
         try (Connection conn = sql_connecter.getConnection();
              Statement stmt = conn.createStatement()) {
             stmt.executeUpdate(sql);
@@ -43,7 +39,6 @@ public class Inventory_view extends JFrame {
             System.out.println(e.getMessage());
         }
     }
-
     public Inventory_view() {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBounds(100, 100, 800, 600);
