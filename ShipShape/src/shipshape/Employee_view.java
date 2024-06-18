@@ -114,7 +114,7 @@ public class Employee_view extends JFrame {
         gbc_btnDeleteEmployee.gridx = 4;
         gbc_btnDeleteEmployee.gridy = 2;
         contentPane.add(btnDeleteEmployee, gbc_btnDeleteEmployee);
-
+        
         btnDeleteEmployee.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String temp_id = textEmployeeId.getText();
