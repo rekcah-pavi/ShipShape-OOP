@@ -318,71 +318,7 @@ public class Employee_view extends JFrame {
         gbc_btnGetAllOrders.gridy = 11;
         contentPane.add(btnGetAllOrders, gbc_btnGetAllOrders);
         
-        btnAddUpdateEmployee.addActionListener(new ActionListener() {
-        	public void actionPerformed(ActionEvent e) {
-        		String temp_id = textEmployeeId.getText();
-                if (temp_id.equals("")) {
-                    JOptionPane.showMessageDialog(null, "Error: missing employee ID");
-                    return;
-                }
-
-                int employee_id;
-                try {
-                    employee_id = Integer.parseInt(temp_id);
-                } catch (NumberFormatException e1) {
-                    JOptionPane.showMessageDialog(null, "Error: Employee ID must be a number");
-                    return;
-                }
-
-                String employee_name = textEmployeeName.getText();
-                String job_role = textJobRole.getText();
-                String schedule = textSchedule.getText();
-                String work_location = textWorkLocation.getText();
-                String skills = textSkills.getText();
-                String email = textEmail.getText();
-
-                String sql = "REPLACE INTO employees (employee_id, employee_name, job_role, schedule, work_location, skills, email) VALUES (?, ?, ?, ?, ?, ?, ?)";
-
-                try (Connection conn = sql_connecter.getConnection();
-                     PreparedStatement pstmt = conn.prepareStatement(sql)) {
-
-                    pstmt.setInt(1, employee_id);
-                    pstmt.setString(2, employee_name);
-                    pstmt.setString(3, job_role);
-                    pstmt.setString(4, schedule);
-                    pstmt.setString(5, work_location);
-                    pstmt.setString(6, skills);
-                    pstmt.setString(7, email);
-
-                    pstmt.executeUpdate();
-                    JOptionPane.showMessageDialog(null, "Employee Added/Updated Successfully");
-
-                    if (sendEmailCheckbox.isSelected()) {
-                        new Thread(() -> {
-                            try {
-                                Mail_sender mailSender = new Mail_sender();
-                                String subject = "New Job Allocation Notification";
-                                String message = "Dear " + employee_name + ",\n\n" +
-                                                 "We are happy to inform you that you have been assigned a new job.\n\n" +
-                                                 "Job Details:\n\n" +
-                                                 "Role: " + job_role + "\n" +
-                                                 "Work location: " + work_location + "\n\n" +
-                                                 "Best regards,\n" +
-                                                 "The ShipeShape Team";
-                                mailSender.send(email, subject, message);
-                                
-                            } catch (Exception e2) {
-                                SwingUtilities.invokeLater(() -> 
-                                    JOptionPane.showMessageDialog(null, "Error sending email: " + e2.getMessage()));
-                            }
-                        }).start();
-                    }
-
-                } catch (SQLException e1) {
-                    JOptionPane.showMessageDialog(null, "Error: " + e1.getMessage());
-                }
-        	}
-        });
+        
 
  
         btnGetEmployeeDetails.addActionListener(new ActionListener() {
